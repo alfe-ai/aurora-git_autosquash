@@ -1,4 +1,3 @@
-```javascript
 const simpleGit = require('simple-git');
 
 module.exports = async function cloneAndSquash(source, destination, skipClone) {
@@ -17,4 +16,3 @@ module.exports = async function cloneAndSquash(source, destination, skipClone) {
         console.log('An error occurred: ', err);
     }
 }
-```
