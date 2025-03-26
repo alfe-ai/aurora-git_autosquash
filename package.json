@@ -1,0 +1,23 @@
+```json
+{
+  "name": "aurora-git_autosquash",
+  "version": "1.0.0",
+  "description": "NodeJS project to squash git repo into another git repo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "git",
+    "squash",
+    "git-repos",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "simple-git": "^3.6.0",
+    "yargs": "^17.3.0"
+  }
+}
+```
