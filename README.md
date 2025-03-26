@@ -12,4 +12,9 @@ node index.js --source=/path/to/source/repo --dest=/path/to/dest/repo
 ```
 
 Replace `/path/to/source/repo` and `/path/to/dest/repo` with the actual local paths to your repositories.
+
+If you already have the repositories on disk and do not want to clone again, you can use:
+```sh
+node index.js --source=/path/to/source/repo --dest=/path/to/dest/repo --skipClone
+```
 ```
