@@ -9,5 +9,7 @@ if (!argv.source || !argv.dest) {
     process.exit(1);
 }
 
-cloneAndSquash(argv.source, argv.dest);
+const skipClone = !!argv.skipClone;
+
+cloneAndSquash(argv.source, argv.dest, skipClone);
 ```
