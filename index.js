@@ -1,4 +1,3 @@
-```javascript
 const yargs = require('yargs/yargs');
 const { hideBin } = require('yargs/helpers');
 const argv = yargs(hideBin(process.argv)).argv;
@@ -12,4 +11,3 @@ if (!argv.source || !argv.dest) {
 const skipClone = !!argv.skipClone;
 
 cloneAndSquash(argv.source, argv.dest, skipClone);
-```
