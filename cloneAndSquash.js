@@ -1,4 +1,5 @@
 const simpleGit = require('simple-git');
+const fs = require('fs-extra');
 
 module.exports = async function cloneAndSquash(source, destination, skipClone) {
     const git = simpleGit();
@@ -6,7 +7,10 @@ module.exports = async function cloneAndSquash(source, destination, skipClone) {
     try {
         if (!skipClone) {
             await git.clone(source, destination);
+        } else {
+            await fs.copy(source, destination, { overwrite: true });
         }
+
         await git.cwd(destination);
         await git.checkout(['-B', 'squash_branch']);
 
